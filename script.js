@@ -20,7 +20,11 @@
   }
 
   const header = document.querySelector('[data-header]');
-  const updateHeader = () => header.classList.toggle('scrolled', scrollY > 30);
+  const heroFooters = document.querySelectorAll('.hero-foot');
+  const updateHeader = () => {
+    header.classList.toggle('scrolled', scrollY > 30);
+    heroFooters.forEach((footer) => footer.classList.toggle('is-hidden', scrollY > 0));
+  };
   updateHeader();
   addEventListener('scroll', updateHeader, { passive: true });
 
