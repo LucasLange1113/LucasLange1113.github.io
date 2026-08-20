@@ -14,9 +14,12 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-nav" data-header>
-    <a class="wordmark" href="#top">Lucas Lange<span>®</span></a>
-    <nav aria-label="Main navigation"><a href="#profile">Profile</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a></nav>
-    <a class="nav-action" href="media/LucasLange_CV_19072026.pdf" target="_blank" rel="noreferrer">Résumé <span>↗</span></a>
+    <a class="wordmark" href="#top">Lucas Lange</a>
+    <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#education">Education</a><a href="about.html?from=top">About me</a></nav>
+    <div class="nav-actions">
+      <a class="nav-about" href="about.html?from=top">About me</a>
+      <a class="nav-action" href="media/LucasLange_CV_19072026.pdf" target="_blank" rel="noreferrer">Résumé <span>↗</span></a>
+    </div>
   </header>
 
   <main id="main">
@@ -25,7 +28,7 @@
         <p class="micro">Agentic AI Engineer · Munich, Germany</p>
         <h1><span class="line-one">Agentic AI.</span><span class="line-two">Built to act.</span></h1>
         <p class="hero-intro">I design, build, and evaluate multi-agent systems—combining strong software engineering with the measurement discipline needed to make agents reliable.</p>
-        <a class="hero-link" href="#experience">Explore experience <span>↓</span></a>
+        <a class="hero-link" href="#profile">Explore my profile <span>↓</span></a>
       </div>
 
       <div class="hero-object reveal" aria-hidden="true">
@@ -38,14 +41,14 @@
 
     <section class="profile section" id="profile">
       <div class="section-inner">
-        <div class="section-tag reveal"><span>01</span> Profile</div>
+        <div class="section-tag reveal"><span>01</span> Professional profile</div>
         <div class="profile-grid">
           <h2 class="reveal">I explored the AI stack.<br><em>Agents are where it clicked.</em></h2>
           <div class="profile-copy reveal">
             <p>My route into agentic AI was deliberately broad: computer vision, NLP, anomaly detection, clinical RAG, intelligent search, distributed software, and production infrastructure. Each role taught me a different part of how intelligent systems succeed—or fail—outside a demo.</p>
             <p>Today I focus on multi-agent architecture and AI evaluation. I enjoy the combination of system design, tool use, experimentation, and rigorous measurement that turns capable models into dependable products.</p>
             <div class="profile-evidence">
-              <span><b>TUM</b>M.Sc. Computer Science · ML major · current grade 1.5</span>
+              <span><b>TUM</b>M.Sc. Computer Science · ML major · current grade 1.5 (1.0 highest)</span>
               <span><b>Certified</b>Microsoft Azure Fundamentals</span>
               <span><b>Teaching</b>Former tutor at Studierendenwerk München</span>
             </div>
@@ -61,12 +64,12 @@
         <div class="experience-heading reveal"><h2>Building agents,<br>backed by <em>range.</em></h2><p>Starting with my current work in agentic AI, then tracing the visual ML, language, RAG, and production experience that led me here.</p></div>
         <div class="experience-grid">
           <details class="experience-object reveal" name="roles" open>
-            <summary><span class="object-number">01</span><div class="object-label"><small>05/2026 — Present</small><strong>BMW Group</strong><span>Agentic AI Engineering</span></div><i>+</i></summary>
+            <summary><span class="object-number">01</span><div class="object-label"><small>05/2026 — Present</small><strong>BMW Group</strong><span>Agentic AI Architecture &amp; Evaluation</span></div><i>+</i></summary>
             <div class="object-copy"><p class="role-title">Master’s Thesis</p><ul><li>Architected 3 agent systems from scratch—monolithic (Google ADK), hierarchical multi-agent (coordinator + specialist sub-agents), and state-graph workflow (LangGraph)—connected via A2A protocol and MCP, enabling the first empirical architecture comparison for tool-calling enterprise agents.</li><li>Designed a 7-phase experimental pipeline with 500+ automated evaluation runs across 20 models, producing statistically validated results with confidence intervals and Holm-Bonferroni significance testing, plus automated cost/performance Pareto analysis via LiteLLM routing.</li><li>Built a dual LLM-as-judge scoring system (GPT-4o + Claude) combined with deterministic tool-call evaluators (precision, recall, order, reliability), running in an async Python pipeline with scenario-driven test fixtures for fully reproducible benchmarking.</li></ul><div class="role-tags"><span>Google ADK</span><span>LangGraph</span><span>LiteLLM</span><span>MCP</span></div></div>
           </details>
           <details class="experience-object reveal" name="roles">
-            <summary><span class="object-number">02</span><div class="object-label"><small>10/2025 — 01/2026</small><strong>Adtran</strong><span>Meta Team Lead / DevOps</span></div><i>+</i></summary>
-            <div class="object-copy"><p class="role-title">Meta Team Lead / DevOps Engineer</p><ul><li>Owned DevOps lifecycle (CI/CD, Docker, hosting) and implemented offline-first sync with conflict resolution for a fault-management platform (Rust, PostgreSQL, React Native).</li></ul><div class="role-tags"><span>Rust</span><span>PostgreSQL</span><span>React Native</span><span>Docker</span></div></div>
+            <summary><span class="object-number">02</span><div class="object-label"><small>10/2025 — 01/2026</small><strong>Adtran</strong><span>Team Leadership &amp; Delivery</span></div><i>+</i></summary>
+            <div class="object-copy"><p class="role-title">Meta Team Lead / DevOps Engineer</p><ul><li>Led the team’s day-to-day collaboration, facilitated recurring meetings, aligned priorities and responsibilities, and kept work moving toward shared delivery goals.</li><li>Represented the team in regular team-lead meetings and held one-on-one meetings with the project supervisor, turning feedback and decisions into clear next steps for the team.</li><li>Contributed hands-on alongside the team by owning the DevOps lifecycle (CI/CD, Docker, hosting) and implementing offline-first synchronization with conflict resolution for a fault-management platform.</li></ul><div class="role-tags"><span>Team Leadership</span><span>Facilitation</span><span>Stakeholder Alignment</span><span>DevOps</span><span>Rust</span><span>PostgreSQL</span></div></div>
           </details>
           <details class="experience-object reveal" name="roles">
             <summary><span class="object-number">03</span><div class="object-label"><small>09/2024 — 12/2024</small><strong>BMW Group</strong><span>Software Engineering</span></div><i>+</i></summary>
@@ -77,12 +80,20 @@
             <div class="object-copy"><p class="role-title">Machine Learning Working Student</p><ul><li>Designed and implemented a RAG pipeline (LangChain, Llama 2) to extract and structure medical information from clinical documentation, collaborating with medical professionals to ensure clinical accuracy.</li></ul><div class="role-tags"><span>LangChain</span><span>Llama 2</span><span>RAG</span><span>NLP</span></div></div>
           </details>
           <details class="experience-object reveal" name="roles">
-            <summary><span class="object-number">05</span><div class="object-label"><small>09/2023 — 12/2023</small><strong>UniCredit</strong><span>Sentiment Data</span></div><i>+</i></summary>
+            <summary><span class="object-number">05</span><div class="object-label"><small>09/2023 — 12/2023</small><strong>UniCredit</strong><span>Data Wrangling &amp; NLP</span></div><i>+</i></summary>
             <div class="object-copy"><p class="role-title">Machine Learning Working Student</p><ul><li>Built data wrangling and preprocessing pipelines for a sentiment analysis dataset, aligning deliverables directly with stakeholders (Python, data pipeline, NLP).</li></ul><div class="role-tags"><span>Python</span><span>Data pipeline</span><span>NLP</span></div></div>
           </details>
           <details class="experience-object reveal" name="roles">
             <summary><span class="object-number">06</span><div class="object-label"><small>11/2022 — 06/2023</small><strong>Nebumind</strong><span>Visual Anomaly Detection</span></div><i>+</i></summary>
-            <div class="object-copy"><p class="role-title">Data Analytics & Machine Learning Working Student</p><ul><li>Automated an image-based anomaly detection pipeline and built the accompanying dashboard UI (Python, computer vision, dashboard).</li></ul><div class="role-tags"><span>Python</span><span>Computer vision</span><span>Dashboard</span></div></div>
+            <div class="object-copy"><p class="role-title">Data Analytics &amp; Machine Learning Working Student</p><ul><li>Applied Python image-processing methods to detect anomalies during the 3D printing of metal parts, automating the analysis pipeline and building its accompanying dashboard UI.</li></ul><div class="role-tags"><span>Python</span><span>Computer vision</span><span>Image processing</span><span>Dashboard</span></div></div>
+          </details>
+          <details class="experience-object reveal" name="roles">
+            <summary><span class="object-number">07</span><div class="object-label"><small>10/2021 — 03/2022</small><strong>Technical University of Munich</strong><span>Reinforcement Learning &amp; Motion Planning</span></div><i>+</i></summary>
+            <div class="object-copy"><p class="role-title">Bachelor Internship</p><ul><li>Developed reinforcement-learning motion planning in Python for autonomous vessels using TUM's CommonRoad platform.</li></ul><div class="role-tags"><span>Python</span><span>Reinforcement learning</span><span>CommonRoad</span><span>Autonomous systems</span></div></div>
+          </details>
+          <details class="experience-object reveal" name="roles">
+            <summary><span class="object-number">08</span><div class="object-label"><small>10/2020 — 02/2021</small><strong>TUM Center for Key Competencies</strong><span>Workshop Facilitation &amp; Leadership Training</span></div><i>+</i></summary>
+            <div class="object-copy"><p class="role-title">Research Assistant / Certified Online-Workshop Trainer</p><ul><li>Led interactive small-group workshops and discussions that helped students develop leadership, presentation, organization, and effective team-building skills.</li></ul><div class="role-tags"><span>Facilitation</span><span>Leadership</span><span>Presentations</span><span>Team building</span></div></div>
           </details>
         </div>
       </div>
@@ -104,16 +115,23 @@
       <div class="section-inner">
         <div class="section-tag reveal"><span>04</span> Education</div>
         <div class="education-grid">
-          <article class="education-card reveal"><time>2023 — Present</time><div><p>M.Sc. Computer Science</p><h3>Technical University of Munich</h3><ul><li>Major in Machine Learning</li><li>Minors in High Performance Computing and Databases</li><li>Erasmus Semester at University of Agder, Norway</li></ul></div></article>
-          <article class="education-card reveal"><time>2018 — 2023</time><div><p>B.Sc. Computer Science</p><h3>Technical University of Munich</h3><ul><li>Minor in Psychology</li></ul></div></article>
+          <article class="education-card reveal"><time>2023 — Present</time><div><p>M.Sc. Computer Science</p><h3>Technical University of Munich</h3><ul><li>Major in Machine Learning</li><li>Minors in High Performance Computing and Databases</li><li>Current grade: 1.5 (German scale; 1.0 highest)</li></ul></div></article>
+          <article class="education-card reveal"><time>01/2025 — 07/2025</time><div><p>Semester Abroad · Computer Science</p><h3>University of Agder, Norway</h3><ul><li>Concepts of Machine Learning</li><li>Intelligent Data Management</li><li>Reinforcement Learning</li><li>Course grades: A</li></ul></div></article>
+          <article class="education-card reveal"><time>2018 — 2023</time><div><p>B.Sc. Computer Science</p><h3>Technical University of Munich</h3><ul><li>Minor in Psychology</li><li>Bachelor's thesis: trained a PyTorch CNN to recognize scheduling-table content in PDFs and verify task completion in TUMexam — thesis grade: 1.0 (German scale; highest possible)</li></ul></div></article>
         </div>
       </div>
     </section>
 
-    <section class="languages-section section" id="languages">
+    <section class="beyond beyond-teaser section" id="about">
       <div class="section-inner">
-        <div class="section-tag reveal"><span>05</span> Languages &amp; interests</div>
-        <div class="languages reveal"><span>Beyond engineering</span><strong>English <small>Native</small></strong><strong>German <small>Native</small></strong><strong>French <small>Bilingual</small></strong><i>Rowing · Hiking</i></div>
+        <div class="section-tag reveal"><span>05</span> Beyond engineering</div>
+        <a class="beyond-teaser-grid reveal" href="about.html?from=section5" aria-label="Discover more about Lucas beyond engineering">
+          <div class="beyond-teaser-copy">
+            <h2>A little more<br><em>human.</em></h2>
+            <p>There is more to me than systems and software. Meet the person behind the engineer.</p>
+            <span class="beyond-teaser-link">Step outside the résumé <i>↗</i></span>
+          </div>
+        </a>
       </div>
     </section>
 

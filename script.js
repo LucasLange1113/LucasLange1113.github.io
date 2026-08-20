@@ -11,6 +11,14 @@
   }
 
   document.querySelectorAll('[data-year]').forEach((node) => { node.textContent = new Date().getFullYear(); });
+
+  const returnLinks = document.querySelectorAll('[data-return-link]');
+  if (returnLinks.length) {
+    const entryPoint = new URLSearchParams(location.search).get('from');
+    const returnDestination = entryPoint === 'section5' ? 'index.html#about' : 'index.html#top';
+    returnLinks.forEach((link) => { link.href = returnDestination; });
+  }
+
   const header = document.querySelector('[data-header]');
   const updateHeader = () => header.classList.toggle('scrolled', scrollY > 30);
   updateHeader();
